@@ -77,7 +77,7 @@ const handleSubmit = async (e) => {
 
     //fatch data from server --> bot's response
 
-    const response = await fatch('http://localhost:5000/',{
+    const response = await fatch('https://amaxx.onrender.com',{
         method:"POST",
         headers:{
             'Content-Type': 'appliction/json'
