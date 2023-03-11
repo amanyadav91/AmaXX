@@ -77,7 +77,7 @@ const handleSubmit = async (e) => {
 
     //fatch data from server --> bot's response
 
-    const response = await fatch('https://amaxx.onrender.com',{
+    const response = await fetch('https://amaxx.onrender.com',{
         method:"POST",
         headers:{
             'Content-Type': 'appliction/json'
@@ -104,7 +104,7 @@ const handleSubmit = async (e) => {
 }
 form.addEventListener('submit', handleSubmit);
 form.addEventListener('keyup', (e) => {
-    if (e.keyCode == 13) {
+    if (e.keyCode === 'Enter') {
         handleSubmit(e);
     }
 })
